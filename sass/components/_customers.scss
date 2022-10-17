@@ -1,0 +1,32 @@
+.client-item {
+    display: flex;
+    color: var(--social-link-icon-color);
+}
+.client-link {
+    display: flex;
+    border: 1px solid var(--social-link-icon-color);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    color: var(--social-link-icon-color);
+    fill: currentColor;
+    transition: border 250ms var(--timing-function), color 250ms var(--timing-function);
+
+&:hover,
+&:focus {
+    border: 1px solid var(--active-elements-color);
+    color: var(--active-elements-color);
+    }
+}
+.client-list {
+    margin-right: 30px;
+
+&:nth-child(6) {
+    margin-right: 0;
+}
+}
+.client-icon {
+    display: inline-block;
+}

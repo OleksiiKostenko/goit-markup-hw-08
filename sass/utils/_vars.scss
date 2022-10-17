@@ -1,0 +1,62 @@
+:root {
+    --text-color-priority: #212121;
+    --secondary-color-priority: #757575;
+    --active-elements-color: #2196f3;
+    --background-color-site: #2f303a;
+    --secondary-text-color: #ffffff;
+    --background-btn-color: #188ce8;
+    --portfolio-btn-color: #f5f4fa;
+    --contact-link-color: rgba(255, 255, 255, 0.6);
+    --link-logo-color: #000000;
+    --border-color: #ececec;
+    --border-block-color: #eeeeee;
+    --social-link-icon-color: #afb1b8;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--text-color-priority);
+    background-color: var(--secondary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration-line: none;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+
+.list {
+    list-style: none;
+}
