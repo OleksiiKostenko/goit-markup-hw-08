@@ -2,10 +2,10 @@
     background-color: var(--background-color-site);
 }
 
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
+// .footer-container {
+//     display: flex;
+//     align-items: baseline;
+// }
 
 .footer-logo {
     display: block;
@@ -53,14 +53,14 @@
     margin-bottom: 20px;
 }
 
-.footer-logolist {
-    display: flex;
-}
+// .footer-logolist {
+//     display: flex;
+// }
 
 .footer-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -123,9 +123,9 @@
     fill: currentColor;
     color: var(--secondary-text-color);
     background-color: var(--active-elements-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     width: 200px;
     border-radius: 4px;
     border: 0;
@@ -140,7 +140,7 @@
 }
 
 .send-email {
-    display: flex;
+    // display: flex;
 }
 
 .send-icon {

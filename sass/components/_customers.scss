@@ -1,12 +1,14 @@
 .client-item {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     color: var(--social-link-icon-color);
 }
 .client-link {
     display: flex;
     border: 1px solid var(--social-link-icon-color);
     border-radius: 4px;
-    width: 170px;
+    width: 210px;
     height: 92px;
     align-items: center;
     justify-content: center;
@@ -21,11 +23,12 @@
     }
 }
 .client-list {
-    margin-right: 30px;
+    margin-bottom: 30px;
+    // margin-right: 30px;
 
-&:nth-child(6) {
-    margin-right: 0;
-}
+// &:nth-child(6) {
+//     margin-right: 0;
+// }
 }
 .client-icon {
     display: inline-block;
