@@ -1,58 +1,68 @@
-.footer-section {
-    background-color: var(--background-color-site);
-}
+.team {
+    background-color: var(--portfolio-btn-color);
 
-.footer-container {
-text-align: center;
-
-
-@media screen and (min-width:1200px) {
+&__list {
     display: flex;
-    align-items: baseline;
-}
-}
-
-
-.footer-form-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--secondary-text-color);
-    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
+&__item {
+    margin-right: 30px;
+    background-color: var(--secondary-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+&__item:nth-child(4n) {
+    margin-right: 0;
+}
+}
+.employees {
+    margin: 0 0 30px 0;
 
-
-.subscribe-btn {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    fill: currentColor;
-    color: var(--secondary-text-color);
-    background-color: var(--active-elements-color);
+&__list {
     display: flex;
     justify-content: center;
+}
+}
+.social {
+    margin-right: 10px;
+
+&__link {
+    display: flex;
     align-items: center;
-    width: 200px;
-    border-radius: 4px;
-    border: 0;
-    padding: 10px 0px;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: currentColor;
+    color: var(--social-link-icon-color);
     transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
-
-
-&:hover,
-&:focus {
-    background-color: var(--background-btn-color);
+}
+&__link:hover,
+&__link:focus {
+    background-color: var(--active-elements-color);
+    color: var(--secondary-text-color);
 }
 }
 
+.button-icon {
+    width: 20px;
+    height: 20px;
+}
 
-
-.send-icon {
-    display: block;
-    margin-left: 10px;
+.photo-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.text-photo {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--secondary-color-priority);
+    margin-bottom: 16px;
+    text-align: center;
 }
