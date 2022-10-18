@@ -1,11 +1,18 @@
 .footer-section {
     background-color: var(--background-color-site);
+
+
 }
 
-// .footer-container {
-//     display: flex;
-//     align-items: baseline;
-// }
+.footer-container {
+    text-align: center;
+
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
 
 .footer-logo {
     display: block;
@@ -53,14 +60,19 @@
     margin-bottom: 20px;
 }
 
-// .footer-logolist {
-//     display: flex;
-// }
+.footer-logolist {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width:1200px) {
+    display: flex;
+}
+}
 
 .footer-link {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -85,7 +97,12 @@
 }
 
 .link-wrapp {
-    margin-left: 70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+    }
 }
 
 .footer-form-title {
@@ -99,7 +116,10 @@
 }
 
 .wrapp-form {
-    margin-left: auto;
+
+    @media screen and (min-width:1200px) {
+        margin-left: auto;
+    }
 }
 
 .footer-email-form {
@@ -108,10 +128,18 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 360px;
+    width: 450px;
     height: 50px;
-    margin-right: 10px;
+    margin-bottom: 20px;
     background-color: var(--background-color-site);
+
+
+
+    @media screen and (min-width:1200px) {
+    margin-right: 10px;
+    margin-bottom: 0;
+    width: 360px;
+    }
 }
 
 .subscribe-btn {
@@ -123,9 +151,9 @@
     fill: currentColor;
     color: var(--secondary-text-color);
     background-color: var(--active-elements-color);
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     border-radius: 4px;
     border: 0;
@@ -140,7 +168,14 @@
 }
 
 .send-email {
-    // display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+     flex-direction: row;;
+    }
 }
 
 .send-icon {
