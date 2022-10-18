@@ -489,6 +489,20 @@ a {
 .footer-container {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: -webkit-box;
@@ -597,6 +611,12 @@ a {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .link-wrapp {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .link-wrapp {
     margin-left: 70px;
@@ -613,6 +633,11 @@ a {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapp-form {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .wrapp-form {
     margin-left: auto;
@@ -626,10 +651,19 @@ a {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 450px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   background-color: var(--background-color-site);
+}
+@media screen and (min-width: 768px) {
+  .footer-email-form {
+    width: 450px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-email-form {
