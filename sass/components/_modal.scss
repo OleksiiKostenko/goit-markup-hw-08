@@ -10,6 +10,11 @@
     transition-delay: 100ms;
 }
 .modal {
+
+    @media screen and (max-width:479px) {
+            max-width: 93%;
+        }
+    
     position: absolute;
     top: 50%;
     left: 50%;
