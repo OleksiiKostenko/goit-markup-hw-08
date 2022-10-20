@@ -9,40 +9,40 @@
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(./image/index-img/mobile/hero-img/header-img.jpg);
+        url(../image/index-img/mobile/hero-img/header-img.jpg);
     background-color: var(--background-color-site);
 
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(./image/index-img/mobile/hero-img/header-img-x2.jpg);
+                url(../image/index-img/mobile/hero-img/header-img-x2.jpg);
         }
 
     @media screen and (min-width:768px) {
         max-width: 768px;  
         background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(./image/index-img/tablet/hero-img/header-img.jpg);      }
+            url(../image/index-img/tablet/hero-img/header-img.jpg);      }
 
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(./image/index-img/tablet/hero-img/header-img-x2.jpg);
+                url(../image/index-img/tablet/hero-img/header-img-x2.jpg);
                         }
         
     @media screen and (min-width:1200px) {
         height: 600px;
         max-width: 1600px;
         background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(./image/index-img/desktop/hero-img/hero-img.jpg);
+            url(../image/index-img/desktop/hero-img/hero-img.jpg);
         }
 
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(./image/index-img/desktop/hero-img/hero-img-x2.jpg);
+                url(../image/index-img/desktop/hero-img/hero-img-x2.jpg);
             }
 
 &__wrapp {
