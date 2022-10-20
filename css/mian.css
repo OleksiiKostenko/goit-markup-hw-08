@@ -1294,6 +1294,12 @@ a {
   letter-spacing: 0.03em;
   color: var(--secondary-color-priority);
 }
+@media screen and (max-width: 479px) {
+  .label-checkbox {
+    font-size: 9px;
+    line-height: 1.1;
+  }
+}
 @media screen and (min-width: 1200px) {
   .label-checkbox {
     font-size: 14px;
