@@ -166,3 +166,25 @@
         height: 16px;
     }
 }
+
+.menu-toggle{
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    display: inline-flex;
+
+ .icon-close{
+    display: none;
+ }
+}
+
+.menu-toggle.js-open-menu{
+.icon-close{
+    display: block;
+}
+
+.icon-menu{
+    display: none;
+}
+}

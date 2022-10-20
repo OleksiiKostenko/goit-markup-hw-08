@@ -296,6 +296,26 @@ a {
   }
 }
 
+.menu-toggle {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.menu-toggle .icon-close {
+  display: none;
+}
+
+.menu-toggle.js-open-menu .icon-close {
+  display: block;
+}
+.menu-toggle.js-open-menu .icon-menu {
+  display: none;
+}
+
 .hero {
   background-repeat: no-repeat;
   display: -webkit-box;
