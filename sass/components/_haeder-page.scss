@@ -2,21 +2,27 @@
     border-bottom: 1px solid var(--border-color);
 
 
-// &__conteiner {
-//     display: flex;
-//     align-items: center;
-// }
+&__conteiner {
+    @media screen and (min-width:768px) {
+    display: flex;
+    align-items: center;}
+}
 }
 .link-logo {
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--link-logo-color);
     display: block;
     margin-right: 90px;
     transition: color 250ms var(--timing-function);
+
+    @media screen and (min-width:1200px) {
+        font-size: 26px;
+        line-height: 1.2
+    }
 }
 .logo {
     color: var(--active-elements-color);
@@ -26,15 +32,17 @@
     color: var(--active-elements-color);
 }
 }
-
-// .navi {
-//     display: flex;
-//     align-items: center;
-// }
+@media screen and (min-width:768px) {
+.navi {
+    display: flex;
+    align-items: center;
+}}
 
 .site-nav {
-    // display: flex;
     padding: 0;
+
+    @media screen and (min-width:768px) {
+    display: flex;}
 
 &__item {
     margin-right: 50px;
@@ -65,12 +73,26 @@
 }
 
 .contact {
-    // display: flex;
     margin-left: auto;
     padding-left: 0;
 
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-direction: row;
+            
+    }
+
 &__item {
-    margin-right: 50px;
+    
+
+    @media screen and (min-width:1200px){
+        margin-right: 50px;
+    }
 }
 
 &__item:last-child {
@@ -81,12 +103,19 @@
     color: var(--secondary-color-priority);
     fill: currentColor;
     font-weight: 500;
-    line-height: 1.15;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
-    padding: 32px 0;
-    // display: inline-flex;
-    // align-items: center;
+    padding: 5px 0;
+    display: inline-flex;
+    align-items: center;
     transition: color 250ms var(--timing-function);
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+        padding: 32px 0;
+        }
 }
 
 &__icon {
@@ -101,9 +130,11 @@
 
 .current {
     color: var(--active-elements-color);
+}
 
 
-&::before {
+@media screen and (min-width:768px) {
+.current::before {
     content: '';
     display: block;
     width: 100%;
@@ -113,4 +144,4 @@
     bottom: -1px;
     background-color: var(--active-elements-color);
     border-radius: 2px;
-}}   
+}}
