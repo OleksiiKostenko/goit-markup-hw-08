@@ -1,0 +1,115 @@
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: var(--secondary-text-color);
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: var(--secondary-text-color);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+.menu-link{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;    
+    letter-spacing: 0.02em;
+    color: var(--text-color-priority);
+
+    &:hover,
+    &:focus{
+        color: var(--active-elements-color);
+    }
+}
+
+.menu-tel{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    margin-top: 306px;
+    display: block;
+    color: var(--active-elements-color);
+
+}
+
+.menu-email{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    margin-top: 32px;
+    display: block;
+    color: var(--secondary-color-priority);
+}
+
+.menu-social{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--active-elements-color);
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    &_list{
+        display: flex;
+        margin-left: -10px;
+        margin-right: -10px;
+    margin-top: 64px;}
+
+    &_item{
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &_item:last-child {
+        border-right: none;
+        }
+}
+.menu-item{
+    margin-bottom: 32px;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
