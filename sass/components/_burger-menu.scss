@@ -29,11 +29,10 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     padding: 48px 40px;
     background-color: var(--secondary-text-color);
     z-index: 999;
-
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
@@ -67,7 +66,6 @@
     font-size: 34px;
     line-height: 40px;
     letter-spacing: 0.02em;
-    margin-top: 306px;
     display: block;
     color: var(--active-elements-color);
 
@@ -86,21 +84,25 @@
 .menu-social{
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--active-elements-color);
     margin-left: 10px;
     margin-right: 10px;
+
+        @media screen and (max-width:479px) {
+        font-size: 16px;
+            }
     
     &_list{
         display: flex;
         margin-left: -10px;
         margin-right: -10px;
-    margin-top: 64px;}
+        margin-top: 64px;}
 
     &_item{
         border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
+        }
 
     &_item:last-child {
         border-right: none;
@@ -112,4 +114,10 @@
 
 .no-scroll{
     overflow: hidden;
+}
+
+.menu-wrapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
